@@ -1,6 +1,7 @@
 import React from 'react'
 import axios from 'axios'
 import { Card, Header, Container } from 'semantic-ui-react';
+import {Link} from 'react-router-dom'
 
 class People extends React.Component {
     state = {people: [], }
@@ -39,9 +40,11 @@ class People extends React.Component {
                         <Card.Description>
                         Height: {results.height}
                         </Card.Description>
+                        <Link to='/planet'>
                         <Card.Description>
                         Home World: {results.homeworld}
                         </Card.Description>
+                        </Link>
                     </Card.Content>
                 </Card>
             </Card.Group>

@@ -1,5 +1,6 @@
 import React from 'react';
 import People from './components/People'
+import Planet from './components/Planet'
 import {Switch, Route} from 'react-router-dom'
 import {Container, } from 'semantic-ui-react'
 import Navbar from './components/Navbar'
@@ -12,7 +13,7 @@ function App() {
       <Navbar />
       <Switch>
         <Route exact path='/people' component={People} />
-        {/* <Route exact path='/planet' component={Planet} /> */}
+        <Route exact path='/planet' component={Planet} />
         
         
       </Switch>
