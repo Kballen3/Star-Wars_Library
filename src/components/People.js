@@ -21,10 +21,36 @@ class People extends React.Component {
             this.state.people.map(results => (
                 <>
                 <Container
-                style={{  }}
+                style=
+                {{ 
+                    display: 'flex',
+                    justifyContent: 'left',
+                    flexDirection: 'column',
+                    alignItems: 'flex-start'
+                         
+                }}
                 >
-                <Card.Group items itemsPerRow={4} stackable >
-                <Card>
+            
+                <Card.Group 
+                    itemsPerRow={1}
+                    style=
+                    {{ 
+                        display: 'flex',
+                        flexDirection: 'column',
+                        alignItems: 'flex-start'
+                    }}  
+                >
+                <Card 
+                    fluid 
+                    color='blue'
+                    style=
+                    {{
+                        display: 'flex',
+                        flexDirection: 'column',
+                        backgroundColor: 'blue'
+        
+                    }}
+                >
                 <Header>Star Wars Character Library</Header>
                     <Card.Content>
                         <Card.Header>{results.name}</Card.Header>
@@ -47,6 +73,10 @@ class People extends React.Component {
                         </Link>
                     </Card.Content>
                 </Card>
+                <Card>
+                
+                </Card>
+               
             </Card.Group>
             </Container>
             </>
